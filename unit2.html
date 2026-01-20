@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 2: Knitwear Focus | Eins Vina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .unit-detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/unit2_hero_new.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="Eins Vina Logo" style="height: 18px;">
+        </a>
+        <a href="index.html#units" style="text-decoration: none; color: var(--primary-blue); font-weight: 600;">&larr;
+            Back to Units</a>
+    </nav>
+
+    <header class="unit-detail-hero">
+        <div>
+            <h1>Eins Vina<br>Sample Development Center</h1>
+
+        </div>
+    </header>
+
+    <section style="padding: 4rem 5%; max-width: 1000px; margin: 0 auto;">
+        <h2>Overview</h2>
+        <p>Established in 2017, EDC delivers high-quality sample production at costs competitive with external
+            outsourcing, backed by a dedicated fabric management system and direct-to-buyer logistics. Our team of
+            highly skilled, long-term MRs possesses the versatility to handle diverse buyer requirements while
+            accurately
+            interpreting specific client nuances. We support comprehensive manufacturing capabilities for most garment
+            types, ensuring both superior quality and operational efficiency.</p>
+
+        <h3 style="margin-top: 3rem; color: var(--primary-blue);">Key Features</h3>
+
+        <!-- Stats Grid Layout - Implemented as HTML/CSS for high quality responsive design -->
+        <div class="unit-stats-grid">
+            <div class="unit-stat-item">
+                <span class="stat-number">126</span>
+                <span class="stat-label">Total Workforce</span>
+                <span class="stat-desc">Total number of sample technicians and MRs</span>
+            </div>
+            <div class="unit-stat-item">
+                <span class="stat-number">840</span>
+                <span class="stat-label">Monthly Style Capacity</span>
+                <span class="stat-desc">Average number of styles developed per month</span>
+            </div>
+            <div class="unit-stat-item">
+                <span class="stat-number">3-7 Days</span>
+                <span class="stat-label">Average Lead Time</span>
+                <span class="stat-desc">Rapid turnaround for urgent sample production</span>
+            </div>
+        </div>
+
+        <!-- Trendy Horizontal Scroll Album -->
+        <div class="scroll-album-container">
+            <h3 style="margin-top: 4rem; margin-bottom: 2rem; color: var(--primary-blue);">Gallery</h3>
+
+            <div class="scroll-album-wrapper">
+                <div class="scroll-album-track">
+                    <!-- Gallery Item 1 -->
+                    <div class="album-item">
+                        <img src="assets/unit2_gallery_1.png" alt="Office Workspace">
+                        <div class="album-overlay">
+                            <span>Office & Design</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="album-item">
+                        <img src="assets/unit2_gallery_2.jpg" alt="Fabric Storage">
+                        <div class="album-overlay">
+                            <span>Material Storage</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="album-item">
+                        <img src="assets/unit2_gallery_3.jpg" alt="Production Floor">
+                        <div class="album-overlay">
+                            <span>Production Floor</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="album-item">
+                        <img src="assets/unit2_gallery_4.jpg" alt="Sewing Lines">
+                        <div class="album-overlay">
+                            <span>Sewing Lines</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 5 -->
+                    <div class="album-item">
+                        <img src="assets/unit2_gallery_5.jpg" alt="Cutting Station">
+                        <div class="album-overlay">
+                            <span>Cutting Station</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 1rem; color: #999; font-size: 0.9rem;">
+                <i class="fas fa-arrows-alt-h"></i> Swipe to explore
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="copyright" style="text-align: center;">
+            <p>&copy; 2024 Eins Vina Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

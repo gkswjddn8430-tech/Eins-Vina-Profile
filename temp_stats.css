@@ -1,0 +1,41 @@
+/* Stats Section */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 6rem auto 2rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 4rem;
+    color: var(--secondary-blue);
+    /* Changed from yellow to match concept */
+    margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.stat-item h4 {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.5;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}

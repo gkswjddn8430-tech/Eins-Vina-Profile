@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3: Special Processing | Eins Vina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .unit-detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/global_me_center_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .gmc-roles-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gmc-role-card {
+            text-align: center;
+        }
+
+        .gmc-role-bar {
+            height: 40px;
+            background: linear-gradient(90deg, #2b4c9b 0%, #4a6ec5 100%);
+            margin-bottom: 1.5rem;
+            width: 100%;
+            border-radius: 2px;
+        }
+
+        .gmc-role-card h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .gmc-role-card p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #444;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        /* Collage Gallery Styles */
+        /* Collage Gallery Styles - Non-Overlapping & Magnify */
+        .collage-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+            padding: 4rem 1rem;
+            /* Dot Pattern Background */
+            background-image: radial-gradient(#cbd5e1 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+            border-radius: 20px;
+            flex-wrap: nowrap;
+        }
+
+        .collage-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
+            width: 300px;
+            height: 400px;
+            cursor: pointer;
+            background: #fff;
+        }
+
+        .collage-card:hover {
+            transform: scale(1.1);
+            /* Magnify effect */
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+            z-index: 10;
+        }
+
+        .collage-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+
+
+        /* Responsive adjustments */
+        @media (max-width: 900px) {
+            .collage-section {
+                flex-direction: column;
+                gap: 2rem;
+                padding: 2rem 0;
+            }
+
+            .collage-card {
+                width: 90%;
+                max-width: 400px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="Eins Vina Logo">
+        </a>
+        <a href="index.html#units" style="text-decoration: none; color: var(--primary-blue); font-weight: 600;">&larr;
+            Back to Units</a>
+    </nav>
+
+    <header class="unit-detail-hero">
+        <div>
+            <h1>Eins Vina<br>Global ME Center</h1>
+            <p style="font-size: 1.2rem;">Manufacturing Excellence</p>
+        </div>
+    </header>
+
+    <section style="padding: 4rem 5%; max-width: 1000px; margin: 0 auto;">
+        <h2>Overview</h2>
+        <p>To secure field-centric innovation and expand our team to meet growing buyer needs, the Global ME Center
+            relocated its headquarters to Eins Vina, Ho Chi Minh, in mid-2025. Supported by our GSD and IE departments,
+            the Center collects best practices from our global network. We are transforming from a data analysis center
+            into a solutions provider, delivering realistic alternatives and deep insights to drive the business
+            forward.</p>
+
+        <h3 style="margin-top: 4rem; color: var(--primary-blue); font-size: 2rem;">Strategic Roles</h3>
+
+        <div class="gmc-roles-grid">
+            <div class="gmc-role-card">
+
+                <h4>Central Data Hub</h4>
+                <p>Acts as a strategic data hub by analyzing 3,000+ styles<br>
+                    annually and calculating SMVs. Consolidates global best<br>
+                    practices and disseminates knowledge, driving<br>
+                    double-digit productivity improvements.
+                </p>
+            </div>
+            <div class="gmc-role-card">
+
+                <h4>Strategic Partner</h4>
+                <p>Provides data-driven production strategy consulting.<br>
+                    Identifies optimal factories for specific products and<br>
+                    ensures an enterprise-wide cost structure through<br>
+                    efficient order assignment.</p>
+            </div>
+            <div class="gmc-role-card">
+
+                <h4>Lean & Future Optimization</h4>
+                <p>Embeds a lean culture within the organization.<br>
+                    Utilizes GSD/IE expertise for process optimization and<br>
+                    accelerates downtime minimization through AI adoption.</p>
+            </div>
+        </div>
+
+        <!-- Trendy Horizontal Scroll Album (Consistent with Unit 2) -->
+        <div class="scroll-album-container" style="margin-top: 4rem;">
+            <div class="scroll-album-wrapper">
+                <div class="scroll-album-track">
+                    <!-- Gallery Item 1 -->
+                    <div class="album-item">
+                        <img src="assets/unit3_new_1.jpg" alt="Production Line">
+                        <div class="album-overlay">
+                            <span>Advanced Production</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="album-item">
+                        <img src="assets/unit3_new_2.jpg" alt="Office Operations">
+                        <div class="album-overlay">
+                            <span>Strategic Operations</span>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="album-item">
+                        <img src="assets/unit3_new_3.png" alt="QA Check">
+                        <div class="album-overlay">
+                            <span>Quality Assurance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 1rem; color: #999; font-size: 0.9rem;">
+                <i class="fas fa-arrows-alt-h"></i> Swipe to explore
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="copyright" style="text-align: center;">
+            <p>&copy; 2024 Eins Vina Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
